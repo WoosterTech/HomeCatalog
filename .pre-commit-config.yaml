@@ -3,9 +3,9 @@ repos:
   rev: v3.29.0
   hooks:
   - id: commitizen
-  - id: commitizen-branch
-    stages:
-    - pre-push
+  # - id: commitizen-branch
+  #   stages:
+  #   - pre-push
 - repo: https://github.com/fpgmaas/deptry.git
   rev: 0.23.0
   hooks:
