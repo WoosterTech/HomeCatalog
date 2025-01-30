@@ -1,0 +1,39 @@
+[project]
+name = "homecatalog"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flask>=3.1.0",
+    "flask-sqlalchemy>=3.1.1",
+    "pydantic>=2.10.6",
+    "pydantic-core>=2.27.2",
+    "sqlalchemy>=2.0.37",
+    "xmltodict>=0.14.2",
+]
+
+[dependency-groups]
+dev = [
+    "commitizen>=4.1.1",
+    "deptry>=0.23.0",
+    "icecream>=2.1.4",
+    "mypy>=1.14.1",
+    "pre-commit>=4.1.0",
+    "ruff>=0.9.3",
+    "types-xmltodict>=0.14.0.20241009",
+]
+test = [
+    "pytest>=8.3.4",
+]
+
+[tool.deptry.per_rule_ignores]
+DEP004 = ["icecream"]
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "pep621"
+update_changelog_on_bump = true
+major_version_zero = true

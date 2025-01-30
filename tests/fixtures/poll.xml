@@ -1,0 +1,16 @@
+<poll name="suggested_playerage" title="User Suggested Player Age" totalvotes="31">
+    <results>
+        <result value="2" numvotes="0"/>
+        <result value="3" numvotes="0"/>
+        <result value="4" numvotes="0"/>
+        <result value="5" numvotes="0"/>
+        <result value="6" numvotes="4"/>
+        <result value="8" numvotes="11"/>
+        <result value="10" numvotes="7"/>
+        <result value="12" numvotes="7"/>
+        <result value="14" numvotes="2"/>
+        <result value="16" numvotes="0"/>
+        <result value="18" numvotes="0"/>
+        <result value="21 and up" numvotes="0"/>
+    </results>
+</poll>

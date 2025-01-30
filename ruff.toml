@@ -1,0 +1,7 @@
+target-version = "py312"
+
+[lint]
+extend-select = ["UP", "RUF"]
+
+[lint.flake8-type-checking]
+runtime-evaluated-base-classes = ["pydantic.BaseModel", "homecatalog.app.Base"]

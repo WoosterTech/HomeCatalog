@@ -1,0 +1,22 @@
+repos:
+- repo: https://github.com/commitizen-tools/commitizen
+  rev: v3.29.0
+  hooks:
+  - id: commitizen
+  - id: commitizen-branch
+    stages:
+    - pre-push
+- repo: https://github.com/fpgmaas/deptry.git
+  rev: 0.23.0
+  hooks:
+  - id: deptry
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.9.3
+  hooks:
+    - id: ruff
+      args: [ --fix ]
+    - id: ruff-format
+- repo: https://github.com/astral-sh/uv-pre-commit
+  rev: 0.5.25
+  hooks:
+    - id: uv-lock
