@@ -14,9 +14,7 @@ from pydantic import (
     ConfigDict,
     Field,
 )
-
-from homecatalog.traverse_path.pydantic import ClassBase as ParentClassBase
-from homecatalog.traverse_path.pydantic import SearchBase
+from attrmagic import ClassBase as ParentClassBase, SearchBase
 
 
 def remove_underscore(name: str) -> str:

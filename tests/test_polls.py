@@ -32,11 +32,11 @@ def test_thing_xml(bunnies_xml_str: str):
 
     assert len(item.poll) > 0
 
-    num_player_poll = item.poll.get(name_iequal="suggested_numplayers")
+    num_player_poll = item.poll.get(name__iexact="suggested_numplayers")
 
     assert num_player_poll is not None
     assert num_player_poll.total_votes == 59
 
-    piatnik_link = item.link.get(id_eq=63306)
+    piatnik_link = item.link.get(id=63306)
 
     assert piatnik_link.value.endswith("Spider Bunny Promo Card")
